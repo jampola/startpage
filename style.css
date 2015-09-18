@@ -1,0 +1,129 @@
+@font-face
+{
+	font-family: Inconsolata;
+	src: url(./fonts/Inconsolata.otf);
+}
+
+html{
+	color: #fff;
+}
+
+body {
+	background-image: url("bg.png");
+}
+
+ul {
+	list-style: none;
+}
+
+ul li a {
+	color: pink;
+}
+
+h1 {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	padding-left: 10px;
+}
+
+
+div#container {
+	width: 960px;
+	padding-top: 0px;
+	margin: 0 auto;
+	padding-top: 5%;
+}
+
+
+
+section#one {
+	width: 320px;
+	float: left;
+	font-family: Inconsolata;
+	font-variant: small-caps;
+	background-color: rgba(8, 33, 18, 0.5); 
+	height: 300px; 
+}
+
+section#two {
+	width: 320px;
+	float: left;
+	font-family: Inconsolata;
+	font-variant: small-caps;
+	background-color: rgba(27, 117, 65, 0.5); 
+	height: 300px; 
+}
+
+section#three {
+	width: 320px;
+	float: left;
+	font-family: Inconsolata;
+	font-variant: small-caps;
+	background-color: rgba(47, 203, 113, 0.5);
+	height: 300px; 
+}
+
+section#weather {
+	width:480px;
+	background-color: rgba(0, 0, 0, .5);
+	font-family: Inconsolata;
+	font-variant: small-caps; 
+	float: left;
+	height: 350px; 
+}
+
+section#weather h2 {
+	font-size: 16px;
+	padding-left: 1em;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+section#weather span {
+	padding-left: 1em;
+}
+
+section#weather span.footer {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	padding-left: 1em;
+	color: #fff;
+	font-size: 12px;
+}
+
+section#rss {
+	width:480px;
+	background-color: rgba(0, 0, 0, .2);
+	font-family: Inconsolata;
+	font-variant: small-caps; 
+	float: left;
+	height: 350px;
+
+}
+
+
+section#rss ul {
+	padding-left: 0;
+}
+
+section#rss ul li {
+	color: #fff;
+	height: 26px;
+	line-height: 26px;
+	font-size: 15px;
+	padding-left: 20px;
+}
+
+section#rss ul li.odd{
+	background-color: rgba(0, 0, 0, .3);
+} 
+
+section#rss ul li.even{
+	background-color: rgba(0, 0, 0, .2);
+} 
+
+section#rss ul li a:link, section#rss ul li a:visited {
+	text-decoration: none;
+	color: #fff;
+}
