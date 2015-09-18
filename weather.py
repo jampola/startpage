@@ -2,10 +2,8 @@
 #!/usr/bin/python
 import urllib2
 import json
-import time
 import os
 import sys
-import pprint
 
 class weatherData:
 	def __init__(self,woeid):

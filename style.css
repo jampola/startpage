@@ -116,14 +116,27 @@ section#rss ul li {
 }
 
 section#rss ul li.odd{
-	background-color: rgba(0, 0, 0, .3);
+	background-color: rgba(0, 0, 0, .5);
 } 
 
 section#rss ul li.even{
-	background-color: rgba(0, 0, 0, .2);
+	background-color: rgba(0, 0, 0, .3);
 } 
 
 section#rss ul li a:link, section#rss ul li a:visited {
 	text-decoration: none;
 	color: #fff;
+}
+
+section#status {
+	width: 960px;
+	background-color: rgba(0, 0, 0, .1);
+	float: left;
+	font-family: Inconsolata;
+	font-variant: small-caps; 
+	font-size: 12px;
+}
+
+section#status span {
+	padding-left: 1em;
 }

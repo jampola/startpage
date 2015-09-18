@@ -16,8 +16,8 @@ class rssFeeds:
 			news_url = d['entries'][x]['links'][0]['href']
 			news_title = d['entries'][x]['title']
 			news_title = news_title.encode('utf-8')
-			if len(news_title) > 65:
-				news_title=news_title[0:65]+"...."
+			if len(news_title) > 63:
+				news_title=news_title[0:63]+"...."
 			if x % 2 == 0:
 				html_news+="<li class='even'><a href={}>{}</a></li>".format(news_url,news_title)
 			else:
