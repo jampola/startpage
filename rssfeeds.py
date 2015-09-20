@@ -15,13 +15,14 @@ class rssFeeds:
 		for x in range(1,10):
 			news_url = d['entries'][x]['links'][0]['href']
 			news_title = d['entries'][x]['title']
+			news_title_full = news_title.replace("'", "`")
 			news_title = news_title.encode('utf-8')
 			if len(news_title) > 63:
 				news_title=news_title[0:63]+"...."
 			if x % 2 == 0:
-				html_news+="<li class='even'><a href={}>{}</a></li>".format(news_url,news_title)
+				html_news+="<li class='even'><a href={} title='{}'>{}</a></li>".format(news_url,news_title_full,news_title)
 			else:
-				html_news+="<li class='odd'><a href={}>{}</a></li>".format(news_url,news_title)
+				html_news+="<li class='odd'><a href={} title='{}'>{}</a></li>".format(news_url,news_title_full,news_title)
 		return html_news		
 		# print html_news		
 
