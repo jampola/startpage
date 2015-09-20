@@ -6,6 +6,7 @@ import weather
 import rssfeeds
 import os, os.path
 from subprocess import Popen, PIPE, check_output
+from random import randint
 
 # this is a bunch of code that generates my start page and 
 # updating some use(less)ful info such as weather and RSS feeds
@@ -50,6 +51,10 @@ class startPageWriter:
 		built_html = "%s %s %s" % ("<ul>\n",links_build,"</ul>")
 		return built_html
 
+	def random_bg(self):
+		filename="%s.jpg" % randint(1, 5)
+		return filename
+
 	def run(self):
 		news_links_html = self.list_builder(html_content.news_links)
 		reddit_links_html = self.list_builder(html_content.reddit_links)
@@ -68,6 +73,8 @@ class startPageWriter:
 		output = output.replace("$rss_data",self.rss_builder.run())
 		output = output.replace("$mail_count",mail_count_html)
 		output = output.replace("$mpc_data",self.get_currently_playing())
+		output = output.replace("$bg_link",self.random_bg())
+
 
 		print output
 

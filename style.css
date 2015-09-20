@@ -9,7 +9,7 @@ html{
 }
 
 body {
-	background-image: url("bg.png");
+	/*background-image: url("./bg/1.jpg");*/
 }
 
 ul {
@@ -17,7 +17,7 @@ ul {
 }
 
 ul li a {
-	color: pink;
+	color: #fff;
 }
 
 h1 {
@@ -34,7 +34,24 @@ div#container {
 	padding-top: 5%;
 }
 
+section#search {
+	width: 960px;
+	float: left;
+	padding: 20px 0 40px 0;
+}
 
+i.fa-search {
+	position: relative;
+	left: 320px;
+}
+section#search input[type=text] {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px #fff solid;
+	color: #fff;
+	width: 280px;
+	left: 325px;
+}
 
 section#one {
 	width: 320px;

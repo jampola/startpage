@@ -3,13 +3,19 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="/home/james/startpage/fonts/css/font-awesome.min.css">
-
+	<body background="./bg/$bg_link">
 	<title>Startpage</title>
 </head>
 <body>
 
 	<div id="container">
-		
+		<section id="search">
+			<form method="get" id="search" action="http://duckduckgo.com/">
+				<i class="fa fa-search"></i>
+			   	<input type="text" name="q" maxlength="255" placeholder="Search"/>
+			   	<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+			</form>
+		</section>
 		<section id="one">
 			<h1><i class="fa fa-newspaper-o"></i> news</h1>
 
